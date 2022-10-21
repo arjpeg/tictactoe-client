@@ -72,6 +72,8 @@ ws.addEventListener('message', (e) => {
         })
 
         curPlayerElement.innerText = "Current player: X"
+    } else if (msg.type === 'draw') {
+        alert("The game ended in a draw!")
     }
 
     console.log(msg);
