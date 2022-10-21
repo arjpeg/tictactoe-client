@@ -10,6 +10,12 @@ const board = document.getElementById('board')
 
 const playerSymbolElement = document.getElementById('playerSymbol')
 
+const wins = document.getElementById('wins')
+const losses = document.getElementById('losses')
+
+let winsCounter = 0;
+let lossesCounter = 0;
+
 function getServerURI() {
     if (window.location.hostname == 'localhost')
         return 'ws://localhost:8003'
@@ -66,6 +72,9 @@ ws.addEventListener('message', (e) => {
             curPlayerElement.innerText = `Current player: ${msg.player === "X" ? "O" : "X"}`
     } else if (msg.type === 'win') {
         setTimeout(() => alert(msg.player + " won the game!"), 300)
+        if (msg.player === playerSymbolElement.innerText) { wins.innerText = ++winsCounter }
+        else { losses.innerText = ++lossesCounter }
+
     } else if (msg.type === 'reset') {
         cells.forEach((cell) => {
             cell.innerText = ''

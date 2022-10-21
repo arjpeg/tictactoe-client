@@ -107,9 +107,7 @@ main {
     aspect-ratio: 1 / 1;
 
     border: #343b43 solid 1px;
-    border-radius: 10px;
-
-    transition-duration: 150ms;
+    transition-duration: 200ms;
 
     display: flex;
     justify-content: center;
@@ -117,11 +115,28 @@ main {
 
     flex-direction: column;
 
-    font-size: 20px;
+    font-size: 200px;
+    line-height: 20px;
+}
+
+.rm-top {
+    border-top: none !important;
+}
+
+.rm-bottom {
+    border-bottom: none !important;
+}
+
+.rm-left {
+    border-left: none !important;
+}
+
+.rm-right {
+    border-right: none !important;
 }
 
 .cell:hover {
-    background-color: #353c45;
+    background-color: #22282c;
 }
 
 .blur {

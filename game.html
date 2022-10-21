@@ -31,25 +31,27 @@
         <br>
 
         <p id="curPlayer">Waiting the for game to start...</p>
-        <small>You are: <span id="playerSymbol"></span></small>
+        <small>You are: <span id="playerSymbol">loading...</span></small>
+        <br>
+        <small>Wins: <span id="wins">0</span> Losses: <span id="losses">0</span></small>
 
         <br><br>
 
         <div id="board" class="blur">
             <div class="row">
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
+                <div class="cell rm-top rm-left"></div>
+                <div class="cell rm-top"></div>
+                <div class="cell rm-top rm-right"></div>
             </div>
             <div class="row">
+                <div class="cell rm-left"></div>
                 <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
+                <div class="cell rm-right"></div>
             </div>
             <div class="row">
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
+                <div class="cell rm-bottom rm-left"></div>
+                <div class="cell rm-bottom"></div>
+                <div class="cell rm-bottom rm-right"></div>
             </div>
         </div>
     </main>
