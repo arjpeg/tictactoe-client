@@ -1,0 +1,130 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    background-color: #1f2428;
+    color: #eee;
+
+    font-family: 'Poppins';
+}
+
+h1 {
+    text-align: center;
+
+    font-size: 45px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    background-color: #24292e;
+    width: 70%;
+
+    padding: 10px;
+    margin: auto;
+
+    border-radius: 10px;
+
+}
+
+.input-field {
+    display: flex;
+    gap: 30px;
+
+    padding: 10px;
+}
+
+p {
+    flex: 2.5
+}
+
+input {
+    flex: 10;
+
+    transition: all;
+    transition-duration: 400ms;
+
+    border-radius: 10px;
+    border: solid #343b43 3px;
+
+    background-color: #24292e;
+    padding: 10px;
+
+    color: #eee;
+    font-size: 15px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+#form-submit {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 20px;
+
+    transition-duration: 800ms;
+}
+
+#form-submit:hover {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+main {
+    width: 70%;
+
+    padding: 10px;
+    margin: auto;
+
+    text-align: center;
+}
+
+#board {
+    width: 60%;
+
+    margin: auto;
+
+    display: flex;
+    flex-flow: column;
+}
+
+.row {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+
+    flex: 1;
+}
+
+.cell {
+    flex: 1;
+    aspect-ratio: 1 / 1;
+
+    border: #343b43 solid 1px;
+    border-radius: 10px;
+
+    transition-duration: 150ms;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    flex-direction: column;
+
+    font-size: 20px;
+}
+
+.cell:hover {
+    background-color: #353c45;
+}
+
+.blur {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}

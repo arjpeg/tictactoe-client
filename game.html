@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <script defer src="game.js"></script>
+</head>
+
+<body>
+
+    <h1>Tic Tac Toe</h1>
+
+    <main>
+        <p>
+            Game pin: <span id="gamePin">Loading...</span>
+        </p>
+
+        <br>
+        <br>
+
+        <p id="curPlayer">Waiting the for game to start...</p>
+        <small>You are: <span id="playerSymbol"></span></small>
+
+        <br><br>
+
+        <div id="board" class="blur">
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
